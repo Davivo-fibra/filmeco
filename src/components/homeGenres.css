@@ -1,0 +1,94 @@
+.genres-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+  
+  .genres-grid button {
+    background-color: #007bff; /* Azul vibrante */
+    color: white;
+    font-size: 1rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .genres-grid button:hover {
+    background-color: #0056b3; /* Azul mais escuro no hover */
+    transform: scale(1.05); /* Efeito de "zoom" suave no hover */
+  }
+  
+  .genres-grid button:focus {
+    outline: none; /* Remove o contorno do botão ao clicar */
+  }
+  
+  .movies-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Exibe 5 filmes por linha */
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .movie-card {
+    text-align: center;
+    position: relative; /* Necessário para o botão aparecer sobre a imagem */
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: 400px; /* Aumentei a altura das capas para 400px */
+    object-fit: cover; /* Faz a imagem cobrir o espaço sem distorcer */
+    border-radius: 8px;
+  }
+  
+  .movie-card h3 {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #fff; /* Altera a cor do texto para branco */
+  }
+  
+  .add-to-list-btn {
+    position: absolute;
+    top: 50%; /* Coloca o botão no meio verticalmente */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o botão */
+    background-color: rgba(0, 123, 255, 0.8); /* Cor azul com transparência */
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    visibility: hidden; /* Inicialmente invisível */
+  }
+  
+  .movie-card:hover .add-to-list-btn {
+    visibility: visible; /* Torna o botão visível quando o mouse passa sobre o filme */
+  }
+  
+  .add-to-list-btn:hover {
+    background-color: rgba(0, 123, 255, 1); /* Cor do botão quando o mouse passa sobre ele */
+  }
+  
+  .load-more-btn {
+    background-color: #28a745;
+    color: white;
+    font-size: 1rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px auto;
+    display: block;
+  }
+  
+  .load-more-btn:hover {
+    background-color: #218838;
+  }
+  

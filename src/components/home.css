@@ -1,0 +1,51 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #15181c; 
+}
+.logo img {
+    height: 50px; 
+}
+.btn-search {
+    padding: 8px;
+    border: none;
+    background-color: #333; 
+    color: white;
+    cursor: pointer;
+    width: 40px; 
+}
+.btn-search img{
+    height: 20px;
+}
+.btn {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 7px;
+    transition: background 0.2s;
+}
+
+
+.btn-login {
+    background-color: #424242;
+    padding: 8px 50px;
+}
+.btn-login:hover {
+    background-color: #363636;
+}
+.btn-signup {
+    background-color: #007bffd8;
+    padding: 8px 50px;
+}
+.btn-signup:hover {
+    background-color: #0056b3;
+}
+
+.col{
+    color: #ffffffcc;
+    margin-left: 1.5%;
+    margin-right: 50%;
+    margin-bottom: 4%;
+    margin-top: 3%;
+}
